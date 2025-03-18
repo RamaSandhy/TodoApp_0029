@@ -16,9 +16,28 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const TaskPage(),
+      home: const TaskManagerPage(),
     );
   }
+}
+
+class Task {
+  final String title;
+  final DateTime deadline;
+  bool isDone;
+
+  Task({
+    required this.title,
+    required this.deadline,
+    this.isDone = false,
+  });
+}
+
+class TaskManagerPage extends StatefulWidget {
+  const TaskManagerPage({super.key});
+
+  @override
+  State<TaskManagerPage> createState() => _TaskManagerPageState();
 }
 
 
