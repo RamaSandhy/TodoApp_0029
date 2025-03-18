@@ -82,6 +82,12 @@ void addTask() {
   }
 }
 
+void toggleTaskStatus(int index) {
+    setState(() {
+      tasks[index].isDone = !tasks[index].isDone;
+    });
+  }
+
 
 
 
