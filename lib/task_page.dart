@@ -11,7 +11,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Task',
+      title: 'TaskManager',
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
@@ -39,6 +39,29 @@ class TaskManagerPage extends StatefulWidget {
   @override
   State<TaskManagerPage> createState() => _TaskManagerPageState();
 }
+
+class _TaskManagerPageState extends State<TaskManagerPage> {
+  final TextEditingController nameController = TextEditingController();
+  DateTime selectedDate = DateTime.now();
+  // Empty list of tasks
+  List<Task> tasks = [];
+
+  bool showSuccessMessage = false;
+
+  Future<void> _selectDate(BuildContext context) async {
+    final DateTime? picked = await showDatePicker(
+      context: context,
+      initialDate: selectedDate,
+      firstDate: DateTime(2020),
+      lastDate: DateTime(2030),
+    );
+    if (picked != null && picked != selectedDate) {
+      setState(() {
+        selectedDate = picked;
+      });
+    }
+  }
+
 
 
 
