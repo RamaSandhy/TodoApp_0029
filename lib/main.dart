@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:pertemuan_3/profile_page.dart';
-import 'package:pertemuan_3/task_manager_page.dart';
+import 'package:pertemuan_3/task_page.dart';
 
 void main() {
   runApp(const MyApp());
