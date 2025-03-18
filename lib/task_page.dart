@@ -62,6 +62,25 @@ class _TaskManagerPageState extends State<TaskManagerPage> {
     }
   }
 
+void addTask() {
+    if (nameController.text.isNotEmpty) {
+      setState(() {
+        tasks.add(Task(
+          title: nameController.text,
+          deadline: selectedDate,
+        ));
+        nameController.clear();
+        showSuccessMessage = true;
+
+        Future.delayed(const Duration(seconds: 2), () {
+          setState(() {
+            showSuccessMessage = false;
+          });
+        });
+      });
+    }
+  }
+}
 
 
 
