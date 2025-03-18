@@ -98,7 +98,6 @@ String _formatDate(DateTime date) {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              // Form page title
               const Center(
                 child: Text(
                   'Form Page',
@@ -109,6 +108,23 @@ String _formatDate(DateTime date) {
                 ),
               ),
               const SizedBox(height: 20),
+              const Text('Task Date:'),
+              Row(
+                children: [
+                  Text(
+                    'Select a date',
+                    style: const TextStyle(color: Colors.grey),
+                  ),
+                  const Spacer(),
+                  IconButton(
+                    icon: const Icon(Icons.calendar_today, color: Colors.blue),
+                    onPressed: () => _selectDate(context),
+                  ),
+                ],
+              ),
+              const Divider(),
+              const SizedBox(height: 10),
+
 
 
 
