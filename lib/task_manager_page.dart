@@ -117,13 +117,28 @@ String _formatDate(DateTime date) {
                   ),
                   const Spacer(),
                   IconButton(
-                    icon: const Icon(Icons.calendar_today, color: Colors.blue),
+                    icon: const Icon(Icons.calendar_today, color: Color.fromARGB(255, 9, 233, 31)),
                     onPressed: () => _selectDate(context),
                   ),
                 ],
               ),
               const Divider(),
               const SizedBox(height: 10),
+              const Text('First Name'),
+              Row(
+                children: [
+                  Expanded(
+                    child: TextField(
+                      controller: nameController,
+                      decoration: const InputDecoration(
+                        hintText: 'Enter your first name',
+                        border: OutlineInputBorder(),
+                      ),
+                    ),
+                  ),
+                  const SizedBox(width: 10),
+
+
 
 
 
