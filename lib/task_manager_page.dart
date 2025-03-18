@@ -138,6 +138,21 @@ String _formatDate(DateTime date) {
                   ),
                   const SizedBox(width: 10),
 
+                   ElevatedButton(
+                    onPressed: addTask,
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: Colors.deepPurple,
+                      foregroundColor: Colors.white,
+                    ),
+                    child: const Text('Submit'),
+                  ),
+                ],
+              ),
+              const SizedBox(height: 20),
+
+
+
+
 
 
 
