@@ -159,6 +159,24 @@ String _formatDate(DateTime date) {
               ),
               const SizedBox(height: 10),
 
+              Expanded(
+                child: tasks.isEmpty 
+                  ? const Center(child: Text('No tasks yet')) 
+                  : ListView.builder(
+                      itemCount: tasks.length,
+                      itemBuilder: (context, index) {
+                        final task = tasks[index];
+                        return Container(
+                          margin: const EdgeInsets.only(bottom: 8),
+                          padding: const EdgeInsets.all(12),
+                          decoration: BoxDecoration(
+                            color: Colors.grey[200],
+                            borderRadius: BorderRadius.circular(8),
+                          ),
+
+                          
+
+
 
 
 
