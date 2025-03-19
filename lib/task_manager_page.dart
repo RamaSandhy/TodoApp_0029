@@ -115,7 +115,7 @@ class _TaskManagerPageState extends State<TaskManagerPage> {
                   ),
                   const Spacer(),
                   IconButton(
-                    icon: const Icon(Icons.calendar_today, color: Colors.blue),
+                    icon: const Icon(Icons.calendar_today, color: Color.fromARGB(255, 34, 245, 10)),
                     onPressed: () => _selectDate(context),
                   ),
                 ],
