@@ -6,7 +6,7 @@
    
 ![Screenshot 2025-03-19 195335](https://github.com/user-attachments/assets/1d1eae1b-361e-424d-99e5-25ae7bc68fad)
 
-4. Berhasil menambahkan Tasks
+3. Berhasil menambahkan Tasks
    
 ![Screenshot 2025-03-19 200628](https://github.com/user-attachments/assets/37554847-0401-4a33-a10c-757af61ddfa0)
 
