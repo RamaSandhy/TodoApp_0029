@@ -192,5 +192,17 @@ class _TaskManagerPageState extends State<TaskManagerPage> {
                                       ),
                                     ),
 
+                                    Text(
+                                      task.isDone ? 'Done' : 'Not Done',
+                                      style: TextStyle(
+                                        color: task.isDone ? Colors.green : Colors.red,
+                                        fontSize: 12,
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+
+
 
                                     
