@@ -1,16 +1,10 @@
-# pertemuan_3
+1. Menambahkan Tasks
+![Screenshot 2025-03-19 195256](https://github.com/user-attachments/assets/a1c2bed9-c377-436b-bbe3-443c21942c26)
 
-A new Flutter project.
+2. Memilih tanggal
+![Screenshot 2025-03-19 195335](https://github.com/user-attachments/assets/1d1eae1b-361e-424d-99e5-25ae7bc68fad)
 
-## Getting Started
+3. Berhasil menambahkan Tasks
+![Screenshot (100)](https://github.com/user-attachments/assets/f3d1af5a-c9d0-43b3-aaac-6ac8b7d287fc)
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
