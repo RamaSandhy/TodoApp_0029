@@ -174,6 +174,20 @@ String _formatDate(DateTime date) {
                             borderRadius: BorderRadius.circular(8),
                           ),
 
+                          child: Row(
+                            children: [
+                              Expanded(
+                                child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Text(
+                                      task.title,
+                                      style: const TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                      ),
+                                    ),
+
+
                           
 
 
