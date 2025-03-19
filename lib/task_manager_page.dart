@@ -183,4 +183,14 @@ class _TaskManagerPageState extends State<TaskManagerPage> {
                                       ),
                                     ),
 
+                                    const SizedBox(height: 4),
+                                    Text(
+                                      'Deadline: ${_formatDate(task.deadline)}',
+                                      style: TextStyle(
+                                        color: Colors.grey[600],
+                                        fontSize: 12,
+                                      ),
+                                    ),
+
+
                                     
