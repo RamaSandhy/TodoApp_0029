@@ -203,6 +203,18 @@ class _TaskManagerPageState extends State<TaskManagerPage> {
                                 ),
                               ),
 
+                               Checkbox(
+                                value: task.isDone,
+                                onChanged: (_) => toggleTaskStatus(index),
+                              ),
+                            ],
+                          ),
+                        );
+                      },
+                    ),
+              ),
+
+
 
 
                                     
