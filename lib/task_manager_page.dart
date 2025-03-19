@@ -214,6 +214,29 @@ class _TaskManagerPageState extends State<TaskManagerPage> {
                     ),
               ),
 
+              if (showSuccessMessage)
+                Container(
+                  padding: const EdgeInsets.symmetric(vertical: 12),
+                  width: double.infinity,
+                  color: Colors.teal,
+                  child: const Center(
+                    child: Text(
+                      'Task added successfully',
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                  ),
+                ),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+}
+
 
 
 
