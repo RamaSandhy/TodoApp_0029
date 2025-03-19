@@ -139,7 +139,7 @@ class _TaskManagerPageState extends State<TaskManagerPage> {
                   ElevatedButton(
                     onPressed: addTask,
                     style: ElevatedButton.styleFrom(
-                      backgroundColor: Colors.deepPurple,
+                      backgroundColor: const Color.fromARGB(255, 109, 249, 1),
                       foregroundColor: Colors.white,
                     ),
                     child: const Text('Submit'),
