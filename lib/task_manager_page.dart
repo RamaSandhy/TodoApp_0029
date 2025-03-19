@@ -11,7 +11,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'TaskManager',
+      title: 'Task Manager',
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
@@ -59,7 +59,7 @@ class _TaskManagerPageState extends State<TaskManagerPage> {
     }
   }
 
-void addTask() {
+  void addTask() {
     if (nameController.text.isNotEmpty) {
       setState(() {
         tasks.add(Task(
@@ -77,19 +77,17 @@ void addTask() {
       });
     }
   }
-}
 
-void toggleTaskStatus(int index) {
+  void toggleTaskStatus(int index) {
     setState(() {
       tasks[index].isDone = !tasks[index].isDone;
     });
   }
-
-String _formatDate(DateTime date) {
+  String _formatDate(DateTime date) {
     return '${date.day.toString().padLeft(2, '0')}-${date.month.toString().padLeft(2, '0')}-${date.year} ${date.hour.toString().padLeft(2, '0')}:${date.minute.toString().padLeft(2, '0')}';
   }
 
-   @override
+  @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: SafeArea(
@@ -117,7 +115,7 @@ String _formatDate(DateTime date) {
                   ),
                   const Spacer(),
                   IconButton(
-                    icon: const Icon(Icons.calendar_today, color: Color.fromARGB(255, 9, 233, 31)),
+                    icon: const Icon(Icons.calendar_today, color: Colors.blue),
                     onPressed: () => _selectDate(context),
                   ),
                 ],
@@ -138,7 +136,7 @@ String _formatDate(DateTime date) {
                   ),
                   const SizedBox(width: 10),
 
-                   ElevatedButton(
+                  ElevatedButton(
                     onPressed: addTask,
                     style: ElevatedButton.styleFrom(
                       backgroundColor: Colors.deepPurple,
@@ -149,8 +147,7 @@ String _formatDate(DateTime date) {
                 ],
               ),
               const SizedBox(height: 20),
-
-               const Text(
+              const Text(
                 'List Tasks',
                 style: TextStyle(
                   fontSize: 18,
@@ -158,7 +155,6 @@ String _formatDate(DateTime date) {
                 ),
               ),
               const SizedBox(height: 10),
-
               Expanded(
                 child: tasks.isEmpty 
                   ? const Center(child: Text('No tasks yet')) 
@@ -187,21 +183,4 @@ String _formatDate(DateTime date) {
                                       ),
                                     ),
 
-
-                          
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+                                    
